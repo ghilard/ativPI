@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Bubblegum Sans", sans-serif;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 a{
+    font-size: 3.5rem;
+    color: black;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.menu-fundo{
+    background-color: #efefef;
+    width: 100%;
+    padding: 0 5rem 0 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-first{
+    display: flex;
+    align-items: center;
+}
+
+.main-conteudo ul{
+    list-style: none;
+    display: flex;
+}
+
+.main-conteudo nav ul li a{
+    display: block;
+    font-size: 2.0rem;
+    padding: 1.6rem 2rem 1.6rem 2rem;
+    color: black;
+    position: relative;
+}
+
+.main-conteudo nav ul li a::after{
+    content: '';
+    left: 0;
+    bottom: 1rem;
+    height: 0.2rem;
+    width: 0%;
+    position: absolute;
+    background-color: #0066ff;
+    transition: all 500ms ease-in-out;
+}
+
+.main-conteudo nav ul li a:hover::after{
+    width: 100%;
+}
+
+.menu-separar{
+    border-left: 1px solid grey;
+    height: 4.5rem;
+    margin: 0.5rem;
+}
+
+.main-conteudo{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.capa-img{
+    background-image: url(../img/pexels-olia-danilevich-5088017.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-top: 5.52rem;
+    height: calc(100vh - 5.52rem);
+    box-shadow: inset 5rem 5rem 13rem rgb(0, 0, 0, 0.5), inset -5rem -5rem 13rem rgb(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.capa-img h2, h3{
+    padding: 2% 10%;
+    margin: 5rem 2rem;
+    text-align: center;
+    color: black;
+}
+
+.main-white{
+    height: 100vh;
+    background-color: #efefef;
+}
+
