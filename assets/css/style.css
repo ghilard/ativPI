@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +12,10 @@ html{
 }
 
 body{
-    font-family: "Nerko One", cursive;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     font-size: 1.6rem;
 }
 
@@ -23,16 +29,31 @@ h1 a{
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+h4{
+    font-size: 4rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+.centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-model{
     max-width: 120rem;
     margin: 0 auto;
+    padding: 5.52rem 0;
 }
 
 .main-white{
@@ -42,6 +63,7 @@ h3{
 
 .menu-fundo{
     background-color: #efefef;
+    height: 5.52rem;
     width: 100%;
     padding: 0 5rem 0 5rem;
     position: fixed;
@@ -51,11 +73,22 @@ h3{
     border: 1px solid lightgray;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.menu-first h1 a{
+    color: #0066ff;
+    text-shadow: 4px 4px rgb(0, 0, 0);
 }
 
 .menu-first{
     display: flex;
     align-items: center;
+}
+
+.menu-first h1 a img{
+    height: 5rem;
+    margin-top: 1rem;
 }
 
 .main-model ul{
@@ -120,22 +153,21 @@ h3{
 .capa-titulo{
     width: 40%;
     background-color: #282828;
-    padding: 15% 5% 0 5%; 
+    padding: 13% 5% 15% 5%;
 }
 
 .capa-titulo h2{
-    text-align: center;
     color: white;
-    font-size: 2.3rem;
     display: block;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .capa-img{
     width: 60%;
     height: 100%;
     box-shadow: inset 5rem 5rem 13rem rgb(0, 0, 0, 0.5), inset -5rem -5rem 13rem rgb(0, 0, 0, 0.5);
-    background-image: url(../img/learning-3107773_1920.jpg);
+    background-image: url(../img/vecteezy_illustration-design-of-teamwork-brainstorming-and-problem_17012628.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -145,14 +177,27 @@ h3{
     font-size: 2rem;
     color: white;
     border-radius: 1rem;
-    background-color: #0066ff;
+    background-color: #007CD6;
 }
 
 #capa-button:hover{
-    background-color: #1b98e0;
+    background-color: #0b53bb;
 }
 
 hr{
-    margin: 3rem auto;
-    width: 85%;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.main-model h4{
+    margin: 2rem 0;
+}
+
+.main-model h3{
+    margin-top: 3.5rem;
+}
+
+.main-sobre{
+    width: 60%;
+    text-align: center;
 }
