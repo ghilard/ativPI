@@ -57,7 +57,7 @@ h5{
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .centralizar{/*Classe para uso geral, centralizar*/
@@ -266,7 +266,7 @@ hr{
 }
 
 .function-bloco img{
-    width: 14%;
+    width: 12%;
     position: absolute;
 }
 
@@ -317,6 +317,18 @@ hr{
 
 /* ==================== QUEM SOMOS ===================== */
 
+.qs-time div{
+    height: 400px;
+    margin: 0 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 1;
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
 .qs-screen{
     height: calc(100vh - 5.52rem);
 }
@@ -334,22 +346,24 @@ hr{
     height: calc(85% - 5.52rem);
 }
 
-.qs-time img{
+.qs-perfil{
     width: 40%;
     margin: 3px 0;
     
 }
 
-.qs-time div{
-    height: 400px;
-    margin: 0 15px;
-    flex-grow: 1;
-    flex-basis: 0;
-    flex-shrink: 1;
-    border: 3px solid var(--border-color);
-    border-radius: 15px;
-    padding: 5px 15px;
-    text-align: center;
+.qs-contato{
+    text-align: left;
+}
+
+.qs-contato img{
+    width: 16%;
+    border-radius: 50%;
+    margin: 15px 10px 0 0;
+}
+
+.qs-contato img:hover{
+    padding: 2px;
 }
 
 .qs-time p{
